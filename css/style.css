@@ -1,0 +1,25 @@
+:root{
+
+  border: 2px solid red;
+};
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+
+body {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    /*background: linear-gradient(to left, white, green);*/
+}
