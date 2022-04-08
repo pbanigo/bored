@@ -27,6 +27,9 @@ body {
 #app{
 	margin-top: 30%;
 }
+#random{
+	font-style: italic;
+}
 @media only screen and (max-width: 700px){
 	body{
 		width: 80%;
