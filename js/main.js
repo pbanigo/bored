@@ -1,4 +1,5 @@
 const suggestion = document.querySelector('p');
+const synth = window.speechSynthesis; //Added Voice synthesis
 
 function suggest(){
 	document.querySelector('h2').textContent = 'Still Bored?';
@@ -18,6 +19,7 @@ function suggest(){
     .then(res => res.json()) // parse response as JSON
     .then(data => {
     	document.querySelector('h1').textContent = `You can ${data.activity}`;
+    	synth.speak(new SpeechSynthesisUtterance(document.querySelector('h1').textContent));//This reads any text in that element
 
     	//img.src = data.message;
     	//const base= data.drinks[0];
